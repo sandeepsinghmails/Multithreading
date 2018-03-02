@@ -1,13 +1,12 @@
-// Print Odd & Even Numbers Using Mutex
 #include <iostream>       // std::cout
 #include <thread>         // std::thread
 #include <mutex>          // std::mutex
 
 std::mutex mtx;
 
-void print (int numb, char ch)
+void print (int max_numb, char ch)
 {
-  for (int even=2, odd=1; even<=numb && odd<numb; )
+  for (int even=2, odd=1; even<=max_numb && odd<max_numb; )
   {
       if (ch == 'e')
       {
