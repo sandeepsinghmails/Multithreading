@@ -16,7 +16,7 @@ void print (int numb, char ch)
           even += 2;
           mtx.unlock();
       }
-      if (ch == 'o')
+      else if (ch == 'o')
       {
           mtx.lock();
           std::cout << odd << std::endl;
